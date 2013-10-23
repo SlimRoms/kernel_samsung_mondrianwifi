@@ -45,6 +45,7 @@
 
 #define PP_CLK_CFG_OFF 0
 #define PP_CLK_CFG_ON 1
+extern bool cpufreq_screen_on;
 
 #define MEM_PROTECT_SD_CTRL 0xF
 
@@ -2881,6 +2882,8 @@ static int mdss_mdp_overlay_on(struct msm_fb_data_type *mfd)
 
 	if (!mfd)
 		return -ENODEV;
+
+	cpufreq_screen_on = true;
 
 	if (mfd->key != MFD_KEY)
 		return -EINVAL;
