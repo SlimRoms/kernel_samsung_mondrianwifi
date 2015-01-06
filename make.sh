@@ -14,7 +14,7 @@ if echo "$ID" | grep josh ; then
     export CROSS_COMPILE=/home/josh/Android/android_prebuilt/linux-x86/toolchain/linaro-4.9-14.06/bin/arm-linux-gnueabihf-
     echo 'exporting Cross Compile for HOME'
 else
-    export CROSS_COMPILE=/home/prbassplayer/caf/prebuilt/linux-x86/toolchain/linaro-4.9-14.06/bin/arm-linux-gnueabihf-
+    export CROSS_COMPILE=/home/prbassplayer/lp5.0-caf/prebuilt/linux-x86/toolchain/linaro-4.9-14.06/bin/arm-linux-gnueabihf-
     echo 'exporting Cross Compile server'
 fi
 
